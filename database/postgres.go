@@ -12,7 +12,7 @@ import (
 // DBConn returns a postgres connection pool.
 func DBConn() (*pg.DB, error) {
 	viper.SetDefault("db_network", "tcp")
-	viper.SetDefault("db_addr", "port=5432:5432")
+	viper.SetDefault("db_addr", "ec2-54-173-77-184.compute-1.amazonaws.com:5432")
 	viper.SetDefault("db_user", "etvubvflgyijwa")
 	viper.SetDefault("db_password", "8022939236364c1680930cd47b5ade7b263bc968b8357cd1b6f1c0538c41199e")
 	viper.SetDefault("db_database", "devil1nej73nmr")
