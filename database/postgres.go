@@ -11,19 +11,14 @@ import (
 
 // DBConn returns a postgres connection pool.
 func DBConn() (*pg.DB, error) {
-	viper.SetDefault("db_network", "tcp")
-	viper.SetDefault("db_addr", "ec2-54-173-77-184.compute-1.amazonaws.com:5432")
-	viper.SetDefault("db_user", "etvubvflgyijwa")
-	viper.SetDefault("db_password", "8022939236364c1680930cd47b5ade7b263bc968b8357cd1b6f1c0538c41199e")
-	viper.SetDefault("db_database", "devil1nej73nmr")
+	viper.SetDefault("pg_url", " postgres://etvubvflgyijwa:8022939236364c1680930cd47b5ade7b263bc968b8357cd1b6f1c0538c41199e@ec2-54-173-77-184.compute-1.amazonaws.com:5432/devil1nej73nmr")
 
-	db := pg.Connect(&pg.Options{
-		Network:  viper.GetString("db_network"),
-		Addr:     viper.GetString("db_addr"),
-		User:     viper.GetString("db_user"),
-		Password: viper.GetString("db_password"),
-		Database: viper.GetString("db_database"),
-	})
+	opt, err := pg.ParseURL(viper.GetString("pg_url"))
+	if err != nil {
+		panic(err)
+	}
+
+	db := pg.Connect(opt)
 
 	if err := checkConn(db); err != nil {
 		return nil, err
