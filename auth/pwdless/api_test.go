@@ -17,9 +17,9 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/spf13/viper"
 
-	"github.com/dhax/go-base/auth/jwt"
-	"github.com/dhax/go-base/email"
-	"github.com/dhax/go-base/logging"
+	"github.com/rizalaslam/selaras-backend/auth/jwt"
+	"github.com/rizalaslam/selaras-backend/email"
+	"github.com/rizalaslam/selaras-backend/logging"
 )
 
 var (

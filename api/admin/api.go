@@ -9,9 +9,9 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-pg/pg"
 
-	"github.com/dhax/go-base/auth/authorize"
-	"github.com/dhax/go-base/database"
-	"github.com/dhax/go-base/logging"
+	"github.com/rizalaslam/selaras-backend/auth/authorize"
+	"github.com/rizalaslam/selaras-backend/database"
+	"github.com/rizalaslam/selaras-backend/logging"
 )
 
 const (

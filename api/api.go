@@ -8,17 +8,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dhax/go-base/api/admin"
-	"github.com/dhax/go-base/api/app"
-	"github.com/dhax/go-base/auth/jwt"
-	"github.com/dhax/go-base/auth/pwdless"
-	"github.com/dhax/go-base/database"
-	"github.com/dhax/go-base/email"
-	"github.com/dhax/go-base/logging"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
 	"github.com/go-chi/render"
+	"github.com/rizalaslam/selaras-backend/api/admin"
+	"github.com/rizalaslam/selaras-backend/api/app"
+	"github.com/rizalaslam/selaras-backend/auth/jwt"
+	"github.com/rizalaslam/selaras-backend/auth/pwdless"
+	"github.com/rizalaslam/selaras-backend/database"
+	"github.com/rizalaslam/selaras-backend/email"
+	"github.com/rizalaslam/selaras-backend/logging"
 )
 
 // New configures application resources and routes.

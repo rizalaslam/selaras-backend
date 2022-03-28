@@ -4,9 +4,9 @@ package migrate
 import (
 	"log"
 
-	"github.com/dhax/go-base/database"
 	"github.com/go-pg/migrations"
 	"github.com/go-pg/pg"
+	"github.com/rizalaslam/selaras-backend/database"
 )
 
 // Migrate runs go-pg migrations

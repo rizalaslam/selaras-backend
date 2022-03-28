@@ -3,7 +3,7 @@ package cmd
 import (
 	"log"
 
-	"github.com/dhax/go-base/api"
+	"github.com/rizalaslam/selaras-backend/api"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

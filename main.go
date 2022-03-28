@@ -1,6 +1,6 @@
 package main
 
-import "github.com/dhax/go-base/cmd"
+import "github.com/rizalaslam/selaras-backend/cmd"
 
 func main() {
 	cmd.Execute()

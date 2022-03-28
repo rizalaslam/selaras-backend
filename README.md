@@ -58,7 +58,7 @@ If you want to access the api from a client that is serverd from a different hos
 
 #### Demo client application
 
-For demonstration of the login and account management features this API serves a demo [Vue.js](https://vuejs.org) PWA. The client's source code can be found [here](https://github.com/dhax/go-base-vue). Build and put it into the api's _./public_ folder, or use the live development server (requires CORS enabled).
+For demonstration of the login and account management features this API serves a demo [Vue.js](https://vuejs.org) PWA. The client's source code can be found [here](https://github.com/rizalaslam/selaras-backend-vue). Build and put it into the api's _./public_ folder, or use the live development server (requires CORS enabled).
 
 Outgoing emails containing the login token will be print to stdout if no valid email smtp settings are provided by environment variables (see table below). If _EMAIL_SMTP_HOST_ is set but the host can not be reached the application will exit immediately at start.
 
@@ -101,7 +101,7 @@ By default viper will look at $HOME/.go-base.yaml for a config file. Setting you
 
 Package auth/pwdless contains example api tests using a mocked database.
 
-[godoc]: https://godoc.org/github.com/dhax/go-base
-[godoc badge]: https://godoc.org/github.com/dhax/go-base?status.svg
-[goreportcard]: https://goreportcard.com/report/github.com/dhax/go-base
-[goreportcard badge]: https://goreportcard.com/badge/github.com/dhax/go-base
+[godoc]: https://godoc.org/github.com/rizalaslam/selaras-backend
+[godoc badge]: https://godoc.org/github.com/rizalaslam/selaras-backend?status.svg
+[goreportcard]: https://goreportcard.com/report/github.com/rizalaslam/selaras-backend
+[goreportcard badge]: https://goreportcard.com/badge/github.com/rizalaslam/selaras-backend

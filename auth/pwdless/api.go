@@ -9,15 +9,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dhax/go-base/auth/jwt"
-	"github.com/dhax/go-base/email"
-	"github.com/dhax/go-base/logging"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"
 	validation "github.com/go-ozzo/ozzo-validation"
 	"github.com/go-ozzo/ozzo-validation/is"
 	"github.com/gofrs/uuid"
 	"github.com/mssola/user_agent"
+	"github.com/rizalaslam/selaras-backend/auth/jwt"
+	"github.com/rizalaslam/selaras-backend/email"
+	"github.com/rizalaslam/selaras-backend/logging"
 	"github.com/sirupsen/logrus"
 )
 

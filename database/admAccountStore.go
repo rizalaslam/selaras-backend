@@ -4,12 +4,12 @@ import (
 	"errors"
 	"net/url"
 
-	"github.com/dhax/go-base/auth/jwt"
-	"github.com/dhax/go-base/auth/pwdless"
-	"github.com/dhax/go-base/models"
 	"github.com/go-pg/pg"
 	"github.com/go-pg/pg/orm"
 	"github.com/go-pg/pg/urlvalues"
+	"github.com/rizalaslam/selaras-backend/auth/jwt"
+	"github.com/rizalaslam/selaras-backend/auth/pwdless"
+	"github.com/rizalaslam/selaras-backend/models"
 )
 
 var (

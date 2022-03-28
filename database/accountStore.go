@@ -1,10 +1,10 @@
 package database
 
 import (
-	"github.com/dhax/go-base/auth/jwt"
-	"github.com/dhax/go-base/auth/pwdless"
-	"github.com/dhax/go-base/models"
 	"github.com/go-pg/pg"
+	"github.com/rizalaslam/selaras-backend/auth/jwt"
+	"github.com/rizalaslam/selaras-backend/auth/pwdless"
+	"github.com/rizalaslam/selaras-backend/models"
 )
 
 // AccountStore implements database operations for account management by user.
