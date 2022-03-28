@@ -11,7 +11,7 @@ import (
 
 // DBConn returns a postgres connection pool.
 func DBConn() (*pg.DB, error) {
-	viper.SetDefault("pg_url", " postgres://etvubvflgyijwa:8022939236364c1680930cd47b5ade7b263bc968b8357cd1b6f1c0538c41199e@ec2-54-173-77-184.compute-1.amazonaws.com:5432/devil1nej73nmr")
+	viper.SetDefault("pg_url", "postgres://etvubvflgyijwa:8022939236364c1680930cd47b5ade7b263bc968b8357cd1b6f1c0538c41199e@ec2-54-173-77-184.compute-1.amazonaws.com:5432/devil1nej73nmr")
 
 	opt, err := pg.ParseURL(viper.GetString("pg_url"))
 	if err != nil {
